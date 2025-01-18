@@ -82,6 +82,8 @@ createPositionSliders(gui,cube,-5,5);
 createRotationSliders(gui,cube,0,5);
 createScaleSliders(gui,cube,0,5);
 
+//OR use this method to create all 3 transform sliders at once.
+//createAllTransformSliders(gui,cube,-5,5);
 
 //DRACO LOADER CONFIG
 const loader = new GLTFLoader();

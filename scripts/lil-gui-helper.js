@@ -30,3 +30,9 @@ export function createScaleSliders(gui, element, sliderStart, sliderEnd,step = 1
     folder.add(element.scale, 'z', sliderStart, sliderEnd,step);
     folder.close();
 }
+
+export function createAllTransformSliders(gui,element,sliderStart,step = 1){
+    createPositionSliders(gui,element,sliderStart,sliderEnd,step);
+    createRotationSliders(gui,element,sliderStart,sliderEnd,step);
+    createScaleSliders(gui,element,sliderStart,sliderEnd,step);
+}
