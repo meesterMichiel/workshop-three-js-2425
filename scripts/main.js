@@ -4,7 +4,7 @@ import {OrbitControls} from'three/addons/controls/OrbitControls.js'
 //DRACO LOADING (compressed models)
 import { DRACOLoader } from 'three/addons/loaders/DRACOLoader.js';
 import GUI from 'lil-gui';
-import {createPositionSliders, createRotationSliders, createScaleSliders} from 'lil-gui-helper'
+import {createPositionSliders, createRotationSliders, createScaleSliders,createAllTransformSliders} from 'lil-gui-helper'
 
 const gui= new GUI();
 
@@ -81,6 +81,7 @@ scene.add(cube);
 createPositionSliders(gui,cube,-5,5);
 createRotationSliders(gui,cube,0,5);
 createScaleSliders(gui,cube,0,5);
+
 
 //DRACO LOADER CONFIG
 const loader = new GLTFLoader();
