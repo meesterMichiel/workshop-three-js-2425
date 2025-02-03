@@ -96,8 +96,13 @@ let monkey1 = await loadModel('../assets/models/Monkey.glb');
 monkey1.position.set(0, -1.75, 2);
 scene.add(monkey1);
 
+//MATERIALS & TEXTURES
+const textureLoader = new THREE.TextureLoader();
+const metalTexture = textureLoader.load('../assets/textures/metal-texture.jpg');
+
 const metalMaterial = new THREE.MeshStandardMaterial({
     color: 0xffff00,
+    map: metalTexture,
     metalness: 0.9,
     roughness: 0.5
 });
